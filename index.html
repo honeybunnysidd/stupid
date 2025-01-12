@@ -3,18 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Play the Game</title>
+    <title>Love Game</title>
+
     <style>
-      div {
-        border: 1px solid black;
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: rgb(139, 135, 135);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      button {
+        padding: 10px 20px;
+        margin: 10px;
+        cursor: pointer;
+        border-radius: 10px;
+        letter-spacing: 1.2px;
+      }
+      .modal-content {
+        display: none;
+        background-color: white;
+        width: 300px;
+        border-radius: 12px;
+        padding: 20px;
         text-align: center;
-        width: 200px;
-        margin: 20% auto;
+      }
+
+      #yesBtn {
+        background-color: rgb(31, 167, 31);
+        color: white;
+      }
+      #noBtn {
+        background-color: red;
+        color: white;
       }
     </style>
   </head>
   <body>
-    <div>Hey!</div>
+    <button class="start">Start the Game</button>
+
+    <div class="modal-content">
+      <p>Do you Love me?</p>
+      <button id="yesBtn">Yes</button>
+      <button id="noBtn">No</button>
+    </div>
+
     <script src="app.js"></script>
   </body>
 </html>
